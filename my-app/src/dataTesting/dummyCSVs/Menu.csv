@@ -1,0 +1,16 @@
+product_id,name,price,category
+1,Pizza,12.5,meal
+2,Burger,10.0,meal
+3,Pasta,8.5,meal
+4,Salad,7.0,meal
+5,Steak,15.0,meal
+6,Fish and Chips,11.0,meal
+7,Tacos,9.0,meal
+8,Soup,6.0,meal
+9,Sandwich,6.5,meal
+10,Fried Chicken,9.75,meal
+11,Soda,2.0,drink
+12,Coffee,3.0,drink
+13,Tea,2.5,drink
+14,Beer,4.0,drink
+15,Wine,5.0,drink

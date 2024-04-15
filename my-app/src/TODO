@@ -1,0 +1,15 @@
+APP
+text entry 
+display return
+
+database 
+dummy data 
+feed data to LLM
+
+backend - ish
+connect components 
+server
+
+LLM
+gpt api
+hugging face intregratipo
