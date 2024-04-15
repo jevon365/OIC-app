@@ -1,0 +1,35 @@
+Step 1: Open MySQL Workbench and Connect to Your Database
+Launch MySQL Workbench.
+Connect to your MySQL server where you want to import the data.
+Step 2: Select Your Database
+Ensure that you have selected the appropriate database/schema where you want to import the CSV files. You can select the schema by clicking on it in the SCHEMAS tab on the left side of the MySQL Workbench window.
+Step 3: Import CSV Data into Tables
+For Each CSV File:
+Open the Table Data Import Wizard:
+
+Navigate to the Server menu in the top toolbar and select Data Import.
+In the opened window, switch to the Import from Disk tab and select Import from Self-Contained File.
+Choose the Import from Dump Project Folder option instead if you've placed all CSV files in a single folder.
+Select the CSV File:
+
+Click on ... to browse and select your CSV file (e.g., Customers.csv).
+Choose the Target Table:
+
+The wizard will ask whether to create a new table or import data into an existing table. Since you already have your tables set up (e.g., Customers, Menu, Orders, Order_Details, Payments), select the existing table corresponding to the CSV file.
+Configure Import Options:
+
+Make sure to configure the import options correctly. This usually involves setting the correct field delimiter (, comma for CSV files), optionally enclosing characters (often ", double quotes), and escape characters (commonly \, backslash).
+You can also specify whether the first line of the CSV contains column names and should be skipped.
+Start the Import:
+
+Review your settings and then start the import process. MySQL Workbench will display the progress and confirm once the import is complete.
+Step 4: Verify the Imported Data
+After importing each CSV file, you can verify the data by querying the tables. For example:
+sql
+Copy code
+SELECT * FROM Customers LIMIT 10;
+This SQL command will show the first 10 entries from the Customers table, allowing you to confirm that the data was imported correctly.
+Troubleshooting Common Issues
+Data Type Mismatches: Ensure that the data types in the CSV match those defined in your MySQL table schema.
+Character Encoding: If you see strange characters, check the character encoding of your CSV file and ensure MySQL Workbench is set to use the same encoding during the import.
+By following these steps, you should be able to successfully import your CSV files into MySQL Workbench. If you encounter any specific issues during the import process, feel free to ask for more detailed help!
